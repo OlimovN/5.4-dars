@@ -1,8 +1,30 @@
-const drums = document.querySelectorAll(".btn-w")
+const buttons = document.querySelectorAll("button");
+const obJek = { w: "crash",a: "kick-bass",s: "snare",d: "tom-1",j: "tom-2",k:"tom-3",l: "tom-4",
+};
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    for (key in obJek) {
+      if (button.textContent == key) {
+        let beat = new Audio(`./sounds/${obJek[key]}.mp3`);
+        beat.play();
+      }
+    }
+  });
+});
 
-drums.forEach((drums) => {
-    drums.addEventListener("click",() => {
-        const crash = new Audio("./sounds/crash.mp3");
-        crash.play();
-    })
-})
+document.addEventListener("keydown", (e) => {
+  for (key in obJek) {
+    if (e.key == key) {
+      buttons.forEach((button) => {
+        if (button.textContent == key) {
+          button.classList.add("scaled");
+          setTimeout(() => {
+            button.classList.remove("scaled");
+          }, 100);
+        }
+      });
+      let beat = new Audio(`./sounds/${obJek[key]}.mp3`);
+      beat.play();
+    }
+  }
+});
