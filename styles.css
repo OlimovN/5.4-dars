@@ -16,7 +16,7 @@ h1 {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 5);
 }
 
-.btn-w {
+.set {
   padding: 70px 70px;
   background-color: #fff;
   border: none;
@@ -25,20 +25,23 @@ h1 {
   min-width: 200px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+}
+.set:hover{
+color: green;
+}
+.set:active {
+background-size: 105%;
+}
+
+.btn-w {
+ 
   background: url(./images/crash.png);
   background-size: cover;
   color: black;
-  text-shadow: 2px  2px 4px rgba(0, 0,0, .3);
-  cursor: pointer;
-  text-transform: capitalize;
+ 
 }
 
-.btn-w:hover{
-color: green;
-}
-.btn-w:active {
-background-size: 105%;
-}
+
 
 .btn-a {
   padding: 70px 70px;
@@ -59,24 +62,10 @@ color: white;
 background-size: 105%;
 }
 .btn-s {
-  padding: 70px 70px;
-  background-color: #fff;
-  border: none;
-  margin: 10px;
-  font-size: 30px;
-  min-width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
 background: url(./images/snare.png);
   
 }
 
-.btn-s:hover{
-color: blue;
-}
-.btn-s:active {
-background-size: 105%;
-}
 .btn-d {
   padding: 70px 70px;
   background-color: #fff;
@@ -89,12 +78,6 @@ background-size: 105%;
   background: url(./images/tom1.png);
 }
 
-.btn-d:hover{
-color: red;
-}
-.btn-d:active {
-background-size: 105%;
-}
 .btn-j {
   padding: 70px 70px;
   background-color: #fff;
@@ -107,12 +90,6 @@ background-size: 105%;
 background: url(./images/tom2.png);
   
 }
-.btn-j:hover{
-color: brown;
-}
-.btn-j:active {
-background-size: 105%;
-}
 .btn-k {
   padding: 70px 70px;
   background-color: #fff;
@@ -124,12 +101,7 @@ background-size: 105%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
   background: url(./images/tom3.png);
 }
-.btn-k:hover{
-color: purple;
-}
-.btn-k:active {
-background-size: 105%;
-}
+
 .btn-l {
   padding: 70px 70px;
   background-color: #fff;
@@ -142,12 +114,7 @@ background-size: 105%;
   background: url(./images/tom4.png);
 
 }
-.btn-l:hover{
-color: yellow;
-}
-.btn-l:active {
-background-size: 105%;
-}
+
  h2 {
   font-sI9ze: 50px;
   letter-spacing: 4px;

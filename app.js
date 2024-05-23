@@ -1,3 +1,14 @@
+const drum = document.querySelectorAll(".drum")
+
+const pressedButton = (key) => {
+  const btn = document.querySelector(".${key")
+
+  setTimeout(() => {
+    btn.classList.remove("pressed")
+  },100)
+}
+
+
 const buttons = document.querySelectorAll("button");
 const obJek = { w: "crash",a: "kick-bass",s: "snare",d: "tom-1",j: "tom-2",k:"tom-3",l: "tom-4",
 };
